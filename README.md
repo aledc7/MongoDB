@@ -189,3 +189,11 @@ mydb.myCollection.remove({});
 
 if you need more data, here is de [oficial documentation](https://docs.mongodb.com/)
 
+With all this you can start working quietly with MongoDB
+
+
+bye!
+
+Ale DC
+
+
