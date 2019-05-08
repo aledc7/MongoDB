@@ -69,10 +69,6 @@ In the exaple above i put a size of 512MB and a maximum of 2 documents.
 ## How to Insert Data
 
 
-```
-insert()
-```
-
 
 
 insertOne()
@@ -85,8 +81,6 @@ mydb.myCollection.insertOne(i
 )
 
 ```
-
-
 
 insertMany()
 ```
@@ -108,4 +102,64 @@ mydb.myCollection.insertMany([
 ])
 ```
 
+
+insert()
+```
+is identical to insertMany()
+```
+
+
+## how to get Data
+
+
+
+This is te basic way to querying Data
+```
+mydb.myCollection.find()
+```
+
+even you can add parameters, like ,pretty() for view the result as a Json aspect.  :)
+```
+mydb.myCollection.find().pretty()
+```
+
+## Automatic ID
+
+when you insert a document in MongoDB, this automatically adds an **_id** field which uniquely identifies each document.
+
+## how to HIDE the id
+```
+mydb.myCollection.find({}, _id: 0 ).pretty()
+```
+
+## how to FILTER data
+
+```
+mydb.myCollection.find(
+ {
+   name: "Alejandro"
+ }
+)
+```
+Of course, the indentation is optional, this isn't Python  ;)
+
+here is another similar example without indentation:
+```
+mydb.myCollection.find({name: "Alejandro"})
+```
+
+## More ways to filter
+
+$lt  (less than)
+$gt (greater than)
+$lte (less than or equal to)
+$gte (greater than or equal to)
+$ne (not equal)
+```
+mydb.myCollection.fid({age : {$lt: 7}})
+```
+
+
+
+## How to Update Documents
 
