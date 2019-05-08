@@ -58,7 +58,54 @@ There are three ways to creare a collection.
 ```
 3. by creating a capped collection:
 ```
-mydb.createCollection("myOtherCollection", {capped : true, size : 7, max : 11})
+mydb.createCollection("myOtherCollection", {capped : true, size : 512, max : 2})
 ```
 
 A “capped collection” has a maximum document count that prevents Overflowing Documents.
+
+In the exaple above i put a size of 512MB and a maximum of 2 documents.
+
+
+## How to Insert Data
+
+
+```
+insert()
+```
+
+
+
+insertOne()
+```
+mydb.myCollection.insertOne(i
+      {
+       "name": "Alejandro", 
+       "webpage": aledc.com
+      }
+)
+
+```
+
+
+
+insertMany()
+```
+mydb.myCollection.insertMany([
+      {
+        "name": "Alejandro", 
+        "website": "aledc.com"
+      },
+      {
+        "name": "Gary Wallis", 
+        "website": "unxs.io"
+      },
+    
+      {
+        "name": "john doe", 
+        "Website": "not found",
+        "location": "Argentina"
+      }
+])
+```
+
+
