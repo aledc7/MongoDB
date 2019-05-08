@@ -49,16 +49,16 @@ Collections is as a table is for SQL database...  yes... the comparison is valid
 There are three ways to creare a collection. 
 
     1. by insert data into the collection:
-    ```
+```
     mydb.colection_name.insert({"name": "Alejandro", "lastname" : De Castro, "location": "New York"})
-    ```
+```
     2. by creating a non-capped collection:
-    ```
+ ```
     mydb.createCollection("colection_name")
-    ```
+ ```
     3. by creating a capped collection:
-    ```
+ ```
     mydb.createCollection("myOtherCollection", {capped : true, size : 7, max : 11})
-    ```
+ ```
 
-A “capped collection” has a maximum document count that prevents overflowing documents.
+A “capped collection” has a maximum document count that prevents Overflowing Documents.
