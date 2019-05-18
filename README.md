@@ -45,6 +45,17 @@ use database_name
 
 Collections is as a table is for SQL database...  yes... the comparison is valid :)
 
+![MongoDB](https://github.com/aledc7/MongoDB/blob/master/MongoDB.png?raw=true)
+     
+
+
+### Relational Database Vs MongoDB
+
+In Mongo DB the Data structure is different ti Mysql.  
+This image show you how mongoDB structure is
+
+![MongoDB](https://github.com/aledc7/MongoDB/blob/master/MongoDb2.png?raw=true)
+
 
 * How to Create a Collection
 
